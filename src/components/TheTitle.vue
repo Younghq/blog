@@ -5,7 +5,6 @@
     </div>
 </template>
 <script setup>
-import { defineProps } from 'vue';
 defineProps(['title1', 'title2']);
 </script>
 <style scoped>
@@ -31,4 +30,3 @@ defineProps(['title1', 'title2']);
     line-height: normal;
 }
 </style>
-  
