@@ -1,6 +1,6 @@
 <template>
     <div>
-        HistoryPage
+        AuthorPage
     </div>
 </template>
 

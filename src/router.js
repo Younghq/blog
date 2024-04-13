@@ -1,5 +1,6 @@
 import HomePage from "./pages/HomePage.vue";
 import HistoryPage from "./pages/HistoryPage.vue";
+import AuthorPage from "./pages/AuthorPage.vue";
 
 import { createRouter, createWebHistory } from "vue-router";
 
@@ -14,6 +15,11 @@ const routes = [
     path: "/history",
     name: "history",
     component: HistoryPage,
+  },
+  {
+    path: "/author",
+    name: "author",
+    component: AuthorPage,
   },
 ];
 

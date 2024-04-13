@@ -40,10 +40,11 @@ const markdown = ref(`
 - 本地通信的UNIX协议族：\`PF_LOCAL\`
 
 - 底层套接字的协议族：\`PF_PACKET\`
-
 - IPX Novell协议族：\`PF_IPX\`
-#include <iostream>
+
+
 \`\`\`cpp
+#include <iostream>
 int main() {
     // 包含转义字符的字符串
     std::string message = "Hello, I'm using escape sequences!\n\tThis is a tab character.\nThis is a backslash: \\\n";
@@ -55,67 +56,6 @@ int main() {
 }
 \`\`\`
 ...
-1.2 协议族
-
-通常使用的最多的协议为IPV4协议。
-
-- IPv4协议族：\`PF_INET\`
-
-- IPv6协议族：\`PF_INET6\`
-
-- 本地通信的UNIX协议族：\`PF_LOCAL\`
-
-- 底层套接字的协议族：\`PF_PACKET\`
-
-- IPX Novell协议族：\`PF_IPX\`1.2 协议族
-
-通常使用的最多的协议为IPV4协议。
-
-- IPv4协议族：\`PF_INET\`
-
-- IPv6协议族：\`PF_INET6\`
-
-- 本地通信的UNIX协议族：\`PF_LOCAL\`
-
-- 底层套接字的协议族：\`PF_PACKET\`
-
-- IPX Novell协议族：\`PF_IPX\`1.2 协议族
-
-通常使用的最多的协议为IPV4协议。
-
-- IPv4协议族：\`PF_INET\`
-
-- IPv6协议族：\`PF_INET6\`
-
-- 本地通信的UNIX协议族：\`PF_LOCAL\`
-
-- 底层套接字的协议族：\`PF_PACKET\`
-
-- IPX Novell协议族：\`PF_IPX\`1.2 协议族
-
-通常使用的最多的协议为IPV4协议。
-
-- IPv4协议族：\`PF_INET\`
-
-- IPv6协议族：\`PF_INET6\`
-
-- 本地通信的UNIX协议族：\`PF_LOCAL\`
-
-- 底层套接字的协议族：\`PF_PACKET\`
-
-- IPX Novell协议族：\`PF_IPX\`1.2 协议族
-
-通常使用的最多的协议为IPV4协议。
-
-- IPv4协议族：\`PF_INET\`
-
-- IPv6协议族：\`PF_INET6\`
-
-- 本地通信的UNIX协议族：\`PF_LOCAL\`
-
-- 底层套接字的协议族：\`PF_PACKET\`
-
-- IPX Novell协议族：\`PF_IPX\`
 `);
 
 
