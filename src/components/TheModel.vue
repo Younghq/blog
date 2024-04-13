@@ -51,20 +51,39 @@ const emits = defineEmits(['closeModel'])
 .modal-content {
     position: relative;
     background: white;
-    border-radius: 52px;
+    border-radius: 15px;
     overflow: hidden;
     width: 90vw;
     height: 85%;
+    overflow-y: auto;
+}
+
+/* 滚动条样式 */
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #6a6a6a;
+    /* 滚动条滑块的颜色 */
+    border-radius: 6px;
+    /* 滑块的边角弧度 */
+}
+
+.modal-content::-webkit-scrollbar-track {
+    /* 滚动条轨道的颜色 */
+    border-radius: 6px;
+    /* 轨道的边角弧度 */
 }
 
 .btns-close {
-    position: absolute;
+    position: fixed;
     background: none;
     border: none;
-    right: 20px;
-    top: 20px;
-
     font-size: 30px;
+    right: 8vw;
+    top: 9%;
+    z-index: 1000;
 }
 
 .slot {
