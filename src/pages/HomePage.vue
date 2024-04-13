@@ -1,18 +1,21 @@
 <template>
     <HomeTitle></HomeTitle>
     <BlogsList>
-        <BlogItem :blogPost="blogPost" :theme="i % 2 == 0 ? theme : null" v-for="i in 10"></BlogItem>
+        <BlogItem :blogPost="blogPost" :theme="i % 2 == 0 ? theme : null" v-for="i in 10" @click="showModel = true">
+        </BlogItem>
     </BlogsList>
-    <TechStackFilter></TechStackFilter>
-    <!-- <BlogCard></BlogCard> -->
+    <TheModel :isShow="showModel" @close-model="showModel = false">
+        <div>
+            <p>1111111111111111111111111111111111111111111</p>
+        </div>
+    </TheModel>
 </template>
 
 <script setup>
 import HomeTitle from '../components/HomeTitle.vue';
 import BlogsList from "../components/BlogsList.vue";
 import BlogItem from "../components/BlogItem.vue";
-import TechStackFilter from "../components/TechStackFilter.vue";
-// import BlogCard from '../components/BlogCard.vue';
+import TheModel from '../components/TheModel.vue';
 import { ref } from 'vue';
 
 const blogPost = ref({
@@ -22,11 +25,7 @@ const blogPost = ref({
     date: '2024-01-01'
 });
 const theme = ref('dark');
+const showModel = ref(false);
 </script>
 
-<style>
-/* 暂时替代遮罩防止滚动效果 */
-body {
-    /* overflow: hidden; */
-}
-</style>
+<style></style>

@@ -8,11 +8,11 @@
         </div>
     </div>
 </template>
-  
+
 <script setup>
 defineProps(["blogPost", "theme"]);
 </script>
-  
+
 <style scoped>
 .blog-item {
     flex: 0 0 auto;
@@ -73,4 +73,3 @@ defineProps(["blogPost", "theme"]);
     top: 145px;
 }
 </style>
-  
