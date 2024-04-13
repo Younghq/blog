@@ -6,7 +6,7 @@
     </BlogsList>
     <TheModel :isShow="showModel" @close-model="showModel = false">
         <div>
-            <p>1111111111111111111111111111111111111111111</p>
+            <BlogContent :markdown="markdown"></BlogContent>
         </div>
     </TheModel>
 </template>
@@ -16,6 +16,7 @@ import HomeTitle from '../components/HomeTitle.vue';
 import BlogsList from "../components/BlogsList.vue";
 import BlogItem from "../components/BlogItem.vue";
 import TheModel from '../components/TheModel.vue';
+import BlogContent from "../components/BlogContent.vue";
 import { ref } from 'vue';
 
 const blogPost = ref({
@@ -26,6 +27,29 @@ const blogPost = ref({
 });
 const theme = ref('dark');
 const showModel = ref(false);
+
+const markdown = ref(`
+1.2 协议族
+
+通常使用的最多的协议为IPV4协议。
+
+- IPv4协议族：\`PF_INET\`
+
+- IPv6协议族：\`PF_INET6\`
+
+- 本地通信的UNIX协议族：\`PF_LOCAL\`
+
+- 底层套接字的协议族：\`PF_PACKET\`
+
+- IPX Novell协议族：\`PF_IPX\`
+
+...
+
+`);
+
+
+
+
 </script>
 
 <style></style>

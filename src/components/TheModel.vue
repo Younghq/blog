@@ -24,8 +24,7 @@
 const props = defineProps({
     isShow: Boolean,
 });
-
-
+const emits = defineEmits(['closeModel'])
 </script>
 
 <style scoped>

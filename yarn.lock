@@ -286,6 +286,11 @@ csstype@^3.1.3:
   resolved "https://registry.npmmirror.com/csstype/-/csstype-3.1.3.tgz"
   integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
 
+diff-match-patch@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/diff-match-patch/-/diff-match-patch-1.0.5.tgz#abb584d5f10cd1196dfc55aa03701592ae3f7b37"
+  integrity sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==
+
 entities@^4.5.0:
   version "4.5.0"
   resolved "https://registry.npmmirror.com/entities/-/entities-4.5.0.tgz"
@@ -385,6 +390,13 @@ source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+vditor@^3.10.3:
+  version "3.10.3"
+  resolved "https://registry.yarnpkg.com/vditor/-/vditor-3.10.3.tgz#0c09e0bf849377aedf0e6c0fa378e72bb86f6492"
+  integrity sha512-+sOLDI4IMRnX/RBH/D3T8BH5qyxeVu9oL9QSEt/xrRTP9d84HJNk+TvbbH3aBSfaSZvNuh1SBesZ0qcj1G8aSg==
+  dependencies:
+    diff-match-patch "^1.0.5"
 
 vite@^5.0.8:
   version "5.0.10"
