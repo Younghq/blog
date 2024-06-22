@@ -6,15 +6,15 @@
     <div class="right">
       <p>认为有所帮助?可以分享给他人，捐赠会提高创作的动力</p>
       <div class="button-group">
-        <button>分享</button>
-        <button>捐赠</button>
+        <TheButton>分享</TheButton>
+        <TheButton>捐赠</TheButton>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-
+import TheButton from './TheButton.vue';
 </script>
 
 <style scoped>

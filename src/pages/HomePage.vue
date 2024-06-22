@@ -27,8 +27,12 @@ const blogPost = ref({
 });
 const theme = ref('dark');
 const showModel = ref(false);
-
 const markdown = ref(`
+
+# 哈哈哈
+## 哈哈哈
+### 哈哈哈
+#### 哈哈哈
 1.2 协议族
 
 通常使用的最多的协议为IPV4协议。
@@ -56,6 +60,66 @@ int main() {
 }
 \`\`\`
 ...
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+- 底层套接字的协议族：\`PF_PACKET\`
+- IPX Novell协议族：\`PF_IPX\`
+\`\`\`cpp
+#include <iostream>
+int main() {
+    // 包含转义字符的字符串
+    std::string message = "Hello, I'm using escape sequences!\n\tThis is a tab character.\nThis is a backslash: \\\n";
+
+    // 输出带有转义字符的字符串
+    std::cout << message;
+
+    return 0;
+}
+\`\`\`\`\`\`cpp
+#include <iostream>
+int main() {
+    // 包含转义字符的字符串
+    std::string message = "Hello, I'm using escape sequences!\n\tThis is a tab character.\nThis is a backslash: \\\n";
+
+    // 输出带有转义字符的字符串
+    std::cout << message;
+
+    return 0;
+}
+\`\`\`\`\`\`cpp
+#include <iostream>
+int main() {
+    // 包含转义字符的字符串
+    std::string message = "Hello, I'm using escape sequences!\n\tThis is a tab character.\nThis is a backslash: \\\n";
+
+    // 输出带有转义字符的字符串
+    std::cout << message;
+
+    return 0;
+}
+\`\`\`\`\`\`cpp
+#include <iostream>
+int main() {
+    // 包含转义字符的字符串
+    std::string message = "Hello, I'm using escape sequences!\n\tThis is a tab character.\nThis is a backslash: \\\n";
+
+    // 输出带有转义字符的字符串
+    std::cout << message;
+
+    return 0;
+}
+\`\`\`
 `);
 
 
