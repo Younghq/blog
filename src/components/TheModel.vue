@@ -1,15 +1,25 @@
-<!-- 遮罩层构建 -->
 <template>
     <Teleport to="body" v-if="isShow">
         <div class="body-modal">
             <div class="modal-backdrop"></div>
             <div class="modal-content">
-                <div class="content-btns">
-                    <p class="content-title"></p>
-                    <p class="content-time"></p>
-                    <p class="content-author"></p>
-                    <button class="btns-close" @click="$emit('close-model')">
-                        ×
+                <div class="content-info">
+                    <div class="info-title">
+                        <p>标题文字</p>
+                    </div>
+                    <div class="info-tag">
+                        <p>标签文字</p>
+                    </div>
+                    <div class="info-techStack">
+                        <p>技术栈</p>
+                    </div>
+                    <div class="info-created">
+                        <div>
+                            <span>@yhq发布于2024-06-24</span>
+                        </div>
+                    </div>
+                    <button class="btns-close" @click="$emit('closeModel')">
+                        X
                     </button>
                 </div>
                 <div class="slot">
@@ -21,10 +31,13 @@
 </template>
 
 <script setup>
+import TheIcon from '../components/TheIcon.vue';
+
 const props = defineProps({
     isShow: Boolean,
 });
-const emits = defineEmits(['closeModel'])
+
+const emits = defineEmits(['closeModel']);
 </script>
 
 <style scoped>
@@ -58,32 +71,53 @@ const emits = defineEmits(['closeModel'])
     overflow-y: auto;
 }
 
-/* 滚动条样式 */
 .modal-content::-webkit-scrollbar {
     width: 8px;
 }
 
 .modal-content::-webkit-scrollbar-thumb {
     background-color: #6a6a6a;
-    /* 滚动条滑块的颜色 */
     border-radius: 6px;
-    /* 滑块的边角弧度 */
 }
 
 .modal-content::-webkit-scrollbar-track {
-    /* 滚动条轨道的颜色 */
     border-radius: 6px;
-    /* 轨道的边角弧度 */
+}
+
+.content-info {
+    margin: 0;
+    padding: 1rem;
+    height: 200px;
+    background-color: #202022;
+    border-bottom: 2px solid #0F0F10;
+}
+
+.info-title {
+    color: #007bff;
+    font-size: 1.5rem;
+}
+
+.info-title p,
+.info-tag p,
+.info-techStack p,
+.info-created div {
+    margin: 1;
+    color: #FCFCFF;
+    text-align: center;
+    /* 垂直居中 */
 }
 
 .btns-close {
-    position: fixed;
-    background: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     border: none;
-    font-size: 30px;
-    right: 8vw;
-    top: 9%;
-    z-index: 1000;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
 }
 
 .slot {

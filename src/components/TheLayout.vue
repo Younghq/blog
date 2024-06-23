@@ -1,8 +1,6 @@
 <template>
     <div class="wrapper">
-
         <slot></slot>
-
     </div>
 </template>
 
@@ -10,7 +8,7 @@
 
 </script>
 
-<style  scoped>
+<style scoped>
 .wrapper {
     width: 80vw;
     max-width: 1440px;
