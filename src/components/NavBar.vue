@@ -45,8 +45,7 @@ nav {
 .title p {
     color: #FFF;
     font-size: 24px;
-    /* font-style: italic; */
-    font-weight: 300;
+    font-family: "HarmonyOS_Sans_SC_Light", sans-serif;
     line-height: normal;
 }
 
@@ -63,9 +62,10 @@ nav {
 .link p {
     color: #F8F8F8;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 15px;
+    font-family: "HarmonyOS_Sans_SC_Light", sans-serif;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+
     line-height: normal;
 
 }

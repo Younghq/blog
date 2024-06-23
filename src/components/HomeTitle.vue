@@ -37,20 +37,20 @@ import TheButton from './TheButton.vue';
 /* 文字大小字体样式 */
 .title span:nth-child(1) {
   color: #FCFCFF;
-
+  font-family: 'HarmonyOS_Sans_SC_Medium', sans-serif;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: normal;
   white-space: nowrap;
 }
 
 .title span:nth-child(2) {
   color: #99999F;
-
+  font-family: 'HarmonyOS_Sans_SC_Medium', sans-serif;
   font-size: 48px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: normal;
 
 }
@@ -70,7 +70,7 @@ import TheButton from './TheButton.vue';
 
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: normal;
 }
 
@@ -105,7 +105,7 @@ import TheButton from './TheButton.vue';
 
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+
   line-height: normal;
 }
 </style>

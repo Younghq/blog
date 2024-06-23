@@ -63,5 +63,6 @@ button {
 
 .TheTablePag span {
     color: #F5F5F7;
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
 }
 </style>

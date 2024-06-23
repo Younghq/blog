@@ -18,7 +18,7 @@
    - 字体族名称：HarmonyOS_Sans_SC_Thin
    - 特点：细体样式，非常细的字体，适合用于特殊设计需求或需要较细字体的文本。
 */
-
+/* font-family: "HarmonyOS_Sans_SC_Medium", sans-serif; */
 @font-face {
     font-family: 'HarmonyOS_Sans_SC_Black';
     src: url('./HarmonyOS_Sans/HarmonyOS_Sans_SC_Black.ttf') format('truetype');

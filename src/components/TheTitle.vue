@@ -12,11 +12,15 @@ defineProps(['title1', 'title2']);
     padding: 10px;
 }
 
+.title span {
+    font-family: 'HarmonyOS_Sans_SC_Medium', sans-serif;
+}
+
 .title span:nth-child(1) {
     color: #FCFCFF;
-    font-size: 32px;
+    font-size: 34px;
     font-style: normal;
-    font-weight: 400;
+
     line-height: normal;
 }
 
@@ -24,7 +28,7 @@ defineProps(['title1', 'title2']);
     color: #99999F;
     font-size: 32px;
     font-style: normal;
-    font-weight: 400;
+
     line-height: normal;
 }
 </style>

@@ -47,27 +47,29 @@
 }
 
 .info-name {
+    font-family: "HarmonyOS_Sans_SC_Bold", sans-serif;
     font-size: 28px;
     margin: 10px 0;
     color: #F5F5F7;
 }
 
 .info-bio {
-    /* font-style: italic; */
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
     color: #666;
     margin-bottom: 20px;
 }
 
 .info-links {
     margin-bottom: 20px;
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
 }
 
 .contact-link {
     margin-right: 20px;
     color: #007bff;
-    /* color: #4694FF; */
     text-decoration: none;
     font-weight: bold;
+
 }
 
 .contact-link:hover {
@@ -82,5 +84,6 @@
 .author-content span {
     margin-left: 12px;
     color: #FFFFFF;
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
 }
 </style>

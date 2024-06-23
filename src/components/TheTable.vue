@@ -64,6 +64,7 @@ const updateCurrentPage = (newPage) => {
     margin: 0 10px;
     text-align: center;
     color: #F5F5F7;
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
 }
 
 .history-item p:first-child {

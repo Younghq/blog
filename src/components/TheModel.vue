@@ -95,6 +95,7 @@ const emits = defineEmits(['closeModel']);
 .info-title p {
     color: #FCFCFF;
     font-size: 1.5rem;
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
 }
 
 .info-tag p,
@@ -102,9 +103,8 @@ const emits = defineEmits(['closeModel']);
 .info-created div {
     margin: 1;
     color: #FCFCFF;
-    /* 垂直居中 */
+    font-family: "HarmonyOS_Sans_SC_Light", sans-serif;
 }
-
 
 .btn-close {
     position: absolute;

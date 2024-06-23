@@ -35,7 +35,6 @@ defineProps(["blogPost", "theme"]);
 
     font-size: 20px;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
 }
 
@@ -54,22 +53,26 @@ defineProps(["blogPost", "theme"]);
 }
 
 .info-item:nth-child(1) {
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
     top: 10px;
     left: 0px;
     font-size: 32px;
 }
 
 .info-item:nth-child(2) {
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
     top: 17px;
     right: 0px;
 }
 
 .info-item:nth-child(3) {
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
     top: 60px;
     left: 0px;
 }
 
 .info-item:nth-child(4) {
+    font-family: "HarmonyOS_Sans_SC_Regular", sans-serif;
     top: 145px;
 }
 </style>

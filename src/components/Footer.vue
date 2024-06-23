@@ -24,7 +24,7 @@ footer {
 }
 
 footer p {
-
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
     text-align: center;
     font-size: 14px;
 }
