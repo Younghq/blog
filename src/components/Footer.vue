@@ -11,9 +11,11 @@
 footer {
     display: flex;
     align-items: center;
-    /* 垂直居中 */
     justify-content: center;
-    /* 水平居中 */
+    position: fixed;
+    /* 固定在页面底部 */
+    bottom: 0;
+    /* 距离底部为0 */
     height: 80px;
     background-color: #121212;
     color: #99999F;
