@@ -70,7 +70,7 @@ import TheButton from './TheButton.vue';
 
   font-size: 16px;
   font-style: normal;
-
+  font-family: 'HarmonyOS_Sans_SC_Light', sans-serif;
   line-height: normal;
 }
 

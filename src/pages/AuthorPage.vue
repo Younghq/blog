@@ -12,7 +12,7 @@
         </div>
         <div class="author-content">
             <span>不积跬步，无以至千里。</span><br>
-            <span>我是Yok1,一个有梦想程序猿！</span>
+            <!-- <span>我是Yok1,一个有梦想程序猿！</span> -->
         </div>
     </div>
 

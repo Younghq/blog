@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="history-div">
         <div class="history-table" v-for="item in paginatedItems" :key="item.id">
             <div class="history-item">
                 <p>{{ item.title }}</p>
@@ -30,7 +30,7 @@ const items = ref([
     { id: 10, title: '文章标题10', subtitle: '小文字10', category: '分类10', date: '日期10' },
 ])
 
-const itemsPerPage = 5
+const itemsPerPage = 10
 const currentPage = ref(1)
 
 const paginatedItems = computed(() => {
@@ -46,7 +46,12 @@ const updateCurrentPage = (newPage) => {
 </script>
 
 <style scoped>
+.history-div {
+    margin-top: 3vw
+}
+
 .history-table {
+
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;

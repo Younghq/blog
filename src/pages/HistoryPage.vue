@@ -6,4 +6,6 @@
 import TheTable from '../components/TheTable.vue';
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
