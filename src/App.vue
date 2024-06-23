@@ -7,6 +7,7 @@
     <Footer></Footer>
 </template>
 <script setup>
+import "./assets/font/font.css"
 import "./assets/base.css";
 import navbar from "./components/NavBar.vue"
 import person from "./components/Person.vue"

@@ -38,7 +38,6 @@ import TheButton from './TheButton.vue';
 .title span:nth-child(1) {
   color: #FCFCFF;
 
-  font-family: Inter;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
@@ -48,11 +47,12 @@ import TheButton from './TheButton.vue';
 
 .title span:nth-child(2) {
   color: #99999F;
-  font-family: Inter;
+
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
 }
 
 .right {
@@ -67,7 +67,7 @@ import TheButton from './TheButton.vue';
   width: 288px;
   /* 主题 */
   color: #FFF;
-  font-family: Inter;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -99,10 +99,10 @@ import TheButton from './TheButton.vue';
 
   color: #FFFFFF;
   background: #007bff;
-  ;
+
 
   /* 字体样式 */
-  font-family: Inter;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

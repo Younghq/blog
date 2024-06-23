@@ -32,7 +32,7 @@ defineProps(["blogPost", "theme"]);
 .info-item {
     position: absolute;
     color: #1D1D1F;
-    font-family: Inter;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

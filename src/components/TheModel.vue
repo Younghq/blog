@@ -18,9 +18,9 @@
                             <span>@yhq发布于2024-06-24</span>
                         </div>
                     </div>
-                    <button class="btns-close" @click="$emit('closeModel')">
-                        X
-                    </button>
+                    <div class="btn-close">
+                        <TheIcon class="btn-close-icon" @click="$emit('closeModel')" icon="close" fill="white" />
+                    </div>
                 </div>
                 <div class="slot">
                     <slot></slot>
@@ -92,33 +92,33 @@ const emits = defineEmits(['closeModel']);
     border-bottom: 2px solid #0F0F10;
 }
 
-.info-title {
-    color: #007bff;
+.info-title p {
+    color: #FCFCFF;
     font-size: 1.5rem;
 }
 
-.info-title p,
 .info-tag p,
 .info-techStack p,
 .info-created div {
     margin: 1;
     color: #FCFCFF;
-    text-align: center;
     /* 垂直居中 */
 }
 
-.btns-close {
+
+.btn-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    background: none;
     border: none;
-    cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
+    right: 14px;
+    top: 10px;
 }
+
+.btn-close svg {
+    width: 32px;
+    height: 32px;
+}
+
 
 .slot {
     padding: 1rem;

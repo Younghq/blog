@@ -24,7 +24,7 @@ footer {
 }
 
 footer p {
-    font-family: Inter;
+
     text-align: center;
     font-size: 14px;
 }

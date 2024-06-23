@@ -23,7 +23,7 @@
 
 <style scoped>
 .author-page {
-    font-family: Inter;
+
     max-width: 800px;
     margin: auto;
     padding: 20px;

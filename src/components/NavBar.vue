@@ -32,6 +32,7 @@ nav {
     /* 背景色与字体颜色 */
     background-color: #202022;
     color: #F8F8F8;
+
 }
 
 .title {
@@ -43,9 +44,8 @@ nav {
 
 .title p {
     color: #FFF;
-    font-family: Inter;
     font-size: 24px;
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: 300;
     line-height: normal;
 }
@@ -57,15 +57,16 @@ nav {
     justify-content: flex-end;
     align-items: flex-start;
     gap: 33px;
+
 }
 
 .link p {
     color: #F8F8F8;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 </style>

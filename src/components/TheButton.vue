@@ -20,7 +20,7 @@ button {
     background: #007bff;
 
     /* 字体样式 */
-    font-family: Inter;
+
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
