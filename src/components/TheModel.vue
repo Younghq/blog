@@ -1,32 +1,33 @@
 <template>
     <Teleport to="body" v-if="isShow">
-        <div class="body-modal">
-            <div class="modal-backdrop"></div>
-            <div class="modal-content">
-                <div class="content-info">
-                    <div class="info-title">
-                        <p>标题文字</p>
-                    </div>
-                    <div class="info-tag">
-                        <p>标签文字</p>
-                    </div>
-                    <div class="info-techStack">
-                        <p>技术栈</p>
-                    </div>
-                    <div class="info-created">
-                        <div>
-                            <span>@yhq发布于2024-06-24</span>
+        <Transition name="slide-fade">
+            <div class="body-modal">
+                <div class="modal-backdrop"></div>
+                <div class="modal-content">
+                    <div class="content-info">
+                        <div class="info-title">
+                            <p>标题文字</p>
+                        </div>
+                        <div class="info-lbl">
+                            <span>
+                                标签文标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字标签文字
+                            </span>
+                        </div>
+                        <div class="info-tag">
+                            <p>技术栈</p>
+                            <p>2024-06-24</p>
+                            <p>yhq</p>
+                        </div>
+                        <div class="btn-close">
+                            <TheIcon class="btn-close-icon" @click="$emit('closeModel')" icon="close" fill="black" />
                         </div>
                     </div>
-                    <div class="btn-close">
-                        <TheIcon class="btn-close-icon" @click="$emit('closeModel')" icon="close" fill="white" />
+                    <div class="slot">
+                        <slot></slot>
                     </div>
                 </div>
-                <div class="slot">
-                    <slot></slot>
-                </div>
             </div>
-        </div>
+        </Transition>
     </Teleport>
 </template>
 
@@ -41,6 +42,20 @@ const emits = defineEmits(['closeModel']);
 </script>
 
 <style scoped>
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
 .body-modal {
     position: fixed;
     width: 100vw;
@@ -63,7 +78,7 @@ const emits = defineEmits(['closeModel']);
 
 .modal-content {
     position: relative;
-    background: white;
+    background: #FFFFFF;
     border-radius: 15px;
     overflow: hidden;
     width: 90vw;
@@ -87,23 +102,45 @@ const emits = defineEmits(['closeModel']);
 .content-info {
     margin: 0;
     padding: 1rem;
-    height: 200px;
-    background-color: #202022;
-    border-bottom: 2px solid #0F0F10;
+    height: 100px;
+}
+
+.content-info {
+    margin-left: 2rem
 }
 
 .info-title p {
-    color: #FCFCFF;
-    font-size: 1.5rem;
-    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
+    font-size: 1.8rem;
+    margin: 0px;
+    margin-top: 1.5rem;
+    color: #007BFF;
+    font-family: "HarmonyOS_Sans_SC_Bold", sans-serif;
+    margin-bottom: 0.8rem
 }
 
-.info-tag p,
-.info-techStack p,
-.info-created div {
-    margin: 1;
-    color: #FCFCFF;
-    font-family: "HarmonyOS_Sans_SC_Light", sans-serif;
+.info-lbl {
+    margin: 0px;
+    font-size: 1.2rem;
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
+    margin-bottom: 0.8rem
+}
+
+.info-lbl span {
+    margin: 0px;
+}
+
+.info-tag {
+    font-family: "HarmonyOS_Sans_SC_Medium", sans-serif;
+    font-size: 1rem;
+    display: flex;
+}
+
+.info-tag p {
+    margin: 0px;
+}
+
+.info-tag p {
+    margin-right: 5px;
 }
 
 .btn-close {

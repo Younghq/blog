@@ -4,6 +4,7 @@
         <BlogItem :blogPost="blogPost" :theme="i % 2 == 0 ? theme : null" v-for="i in 10" @click="showModel = true">
         </BlogItem>
     </BlogsList>
+    
     <TheModel :isShow="showModel" @close-model="showModel = false">
         <div>
             <BlogContent :markdown="markdown"></BlogContent>

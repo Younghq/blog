@@ -4,13 +4,16 @@
             <p>YoungBlogs</p>
         </div>
         <div class="link">
-            <router-link class="link-home" to="/">
+            <router-link class="link-item" to="/" exact-active-class="active-link">
+                <TheIcon icon="home" fill="white" />
                 <p>主页</p>
             </router-link>
-            <router-link class="link-history" to="/history">
+            <router-link class="link-item" to="/history" exact-active-class="active-link">
+                <TheIcon icon="history" fill="white" />
                 <p>归档</p>
             </router-link>
-            <router-link class="link-author" to="/author">
+            <router-link class="link-item" to="/author" exact-active-class="active-link">
+                <TheIcon icon="user" fill="white" />
                 <p>我的</p>
             </router-link>
         </div>
@@ -18,6 +21,7 @@
 </template>
 
 <script setup>
+import TheIcon from "../components/TheIcon.vue"
 </script>
 
 <style scoped>
@@ -32,7 +36,6 @@ nav {
     /* 背景色与字体颜色 */
     background-color: #202022;
     color: #F8F8F8;
-
 }
 
 .title {
@@ -49,24 +52,41 @@ nav {
     line-height: normal;
 }
 
-/*  */
 .link {
-    display: inline-flex;
-    padding: 13px 55px 14px 59px;
+    display: flex;
     justify-content: flex-end;
-    align-items: flex-start;
-    gap: 33px;
-
+    align-items: center;
+    padding-right: 50px;
+    gap: 8px;
 }
 
-.link p {
+
+.link-item {
+    display: flex;
+    /*垂直居中*/
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+.link-item:hover {
+    background-color: #121212;
+}
+
+.link-item p {
     color: #F8F8F8;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: "HarmonyOS_Sans_SC_Light", sans-serif;
     font-size: 16px;
     font-style: normal;
-
     line-height: normal;
+    margin: 0;
+}
 
+/* 高亮当前活动链接 */
+.active-link {
+    background-color: #000000a0;
 }
 </style>

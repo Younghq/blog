@@ -33,9 +33,4 @@ svg {
     width: 1em;
     height: 1em;
 }
-
-/* use {
-    fill: var(--icon-fill, none);
-    stroke: var(--icon-stroke, #000);
-} */
 </style>
